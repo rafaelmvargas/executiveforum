@@ -1,0 +1,148 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: content-box;
+  font-size: 1.2em;
+}
+h1 {
+  color: darkgoldenrod;
+}
+a:link {
+  color: darkmagenta;
+}
+
+a:visited {
+  color: purple;
+}
+
+a {
+  font: bold;
+}
+
+.tab {
+  margin-left: 40px;
+}
+.bigger {
+  position: relative;
+  top: 50px;
+}
+.smaller {
+  background-image: url("gallery/13.jpg");
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.old {
+  background-image: url(img/old.jpg);
+  width: 749px;
+  height: 558px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parallax {
+  position: relative;
+  /* The image used */
+  background-image: url(img/kmec.jpg);
+  background-position: center;
+
+  /* Set a specific height */
+  height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-two {
+  position: relative;
+  /* The image used */
+  background-image: url(img/arch.jpg);
+  background-position: center;
+
+  /* Set a specific height */
+  height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.letter {
+  position: relative;
+  top: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px;
+}
+
+.top-buffer {
+  margin-top: 30px;
+}
+
+.side-buffer {
+  margin: 10px;
+}
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .parallax {
+    position: relative;
+    /* The image used */
+    background-image: url(img/kmec.jpg);
+    background-position: center;
+
+    /* Set a specific height */
+    height: 1100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax-two {
+    position: relative;
+    /* The image used */
+    background-image: url(img/arch.jpg);
+    background-position: center;
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .smaller {
+    background-image: url("gallery/13.jpg");
+    width: 270px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .old {
+    position: relative;
+    top: 50px;
+    background-image: url(img/old.jpg);
+    width: 749px;
+    height: 558px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
